@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "tailwindcss -i ./src/input.css -o ./public/output.css --watch",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "dev": "tailwindcss -i ./src/input.css -o ./public/output.css --watch"
   },
   "keywords": [],
   "author": "",
@@ -17,8 +15,10 @@
   },
   "dependencies": {
     "aos": "^2.3.4"
-  },
-  "homepage": "https://github.com/Qamrul-Hassan/Tourist-Main"
+  }
 }
-
-
+"homepage": "https://github.com/Qamrul-Hassan/Tourist-Main",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}

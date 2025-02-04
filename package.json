@@ -17,8 +17,4 @@
     "aos": "^2.3.4"
   }
 }
-"homepage": "https://github.com/Qamrul-Hassan/Tourist-Main",
-"scripts": {
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
-}
+

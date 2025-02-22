@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/output.css" />
+
+    <!-- Google Web Fonts -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="/public/output.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+
+    <title>Tourist - Enjoy Your Vacation With Us</title>
+</head>
+
+
+
+<body class="bg-white">
+
+    <!-- Topbar Start -->
+    <div class="bg-gray-600 text-white py-1 hidden lg:flex justify-between items-center px-10">
+        <div class="flex items-center space-x-6">
+            <p><i class="fas fa-map-marker-alt"></i> 123 Street, New York, USA</p>
+            <p><i class="fas fa-phone"></i> +012 345 6789</p>
+            <p><i class="fas fa-envelope"></i> mail@domain.com</p>
+        </div>
+        <div class="flex items-center space-x-3">
+            <a href="#"
+                class="text-white rounded-full px-2 py-1 border-gray-500 border-2 hover:bg-white hover:text-black transition duration-700"><i
+                    class="fab fa-twitter"></i></a>
+            <a href="#"
+                class="text-white rounded-full px-3 py-1 border-gray-500 border-2 hover:bg-white hover:text-black transition duration-700"><i
+                    class="fab fa-facebook-f"></i></a>
+            <a href="#"
+                class="text-white rounded-full px-2 py-1 border-gray-500 border-2 hover:bg-white hover:text-black transition duration-700"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="#"
+                class="text-white rounded-full px-2 py-1 border-gray-500 border-2 hover:bg-white hover:text-black transition duration-700"><i
+                    class="fab fa-linkedin-in"></i></a>
+            <a href="#"
+                class="text-white rounded-full px-2 py-1 border-gray-500 border-2 hover:bg-white hover:text-black transition duration-700"><i
+                    class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+   <!-- Navbar Start -->
+<nav class="bg-transparent container">
+    <div class="container mx-auto flex py-4 px-6 absolute justify-between items-center border-b-gray-400 z-10">
+        <a href="#" class="text-4xl font-bold text-lime-500"><i class="fa fa-map-marker-alt me-3"></i> Tourist</a>
+        <div class="hidden lg:flex items-center space-x-6">
+            <a href="#"
+                class="text-lime-500 hover:text-lime-500 py-4 border-b-2 border-transparent hover:border-lime-500 transition duration-500">Home</a>
+            <a href="#"
+                class="text-white hover:text-lime-500 py-4 border-b-2 border-transparent hover:border-lime-500 transition duration-500">About</a>
+            <a href="#"
+                class="text-white hover:text-lime-500 py-4 border-b-2 border-transparent hover:border-lime-500 transition duration-500">Services</a>
+            <a href="#"
+                class="text-white hover:text-lime-500 py-4 border-b-2 border-transparent hover:border-lime-500 transition duration-500">Packages</a>
+
+            <!-- Dropdown after Packages -->
+            <div class="relative group">
+                <a href="#"
+                    class="text-white hover:text-lime-500 py-4 border-b-2 border-transparent group-hover:border-lime-500 transition duration-500">Pages
+                    <i class="fa-solid fa-chevron-down"></i></a>
+                <div class="absolute hidden group-hover:block bg-white text-black mt-1 rounded shadow-lg">
+                    <a href="#" class="block px-4 py-2 hover:bg-lime-500 hover:text-white">Destination</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-lime-500 hover:text-white">Booking</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-lime-500 hover:text-white">Travel Guide</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-lime-500 hover:text-white">Testimonial</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-lime-500 hover:text-white">404 Error</a>
+                </div>
+            </div>
+
+            <a href="#"
+                class="text-white hover:text-lime-500 py-4 border-b-2 border-transparent hover:border-lime-500 transition duration-500">Contact</a>
+            <a href="#"
+                class="px-4 py-2 bg-lime-500 text-white rounded-md hover:bg-lime-700 duration-700">Register</a>
+        </div>
+        <button class="text-white text-3xl lg:hidden"><i class="fa fa-bars"></i></button>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+
+
+    <!-- Hero Section Start -->
+    <div class="relative bg-cover bg-center h-96" style="background-image: url('/public/img/bg-hero.jpg');">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div> <!-- Dark overlay -->
+        <div class="relative container mx-auto h-full flex flex-col justify-center items-center text-center text-white"
+            data-aos="fade-down" data-aos-duration="1000">
+            <h1 class="text-5xl font-bold mb-4">Enjoy Your Vacation With Us</h1>
+            <p class="text-lg mb-8">Tempor erat elitr rebum at clita diam amet diam et eos erat ipsum lorem sit</p>
+            <div class="flex max-w-lg w-full">
+                <input type="text" placeholder="Eg: Thailand"
+                    class="w-full py-3 px-5 rounded-l-full focus:outline-none text-gray-800">
+                <button
+                    class="bg-lime-500 text-white px-8 py-3 rounded-r-full hover:bg-lime-600 duration-700">Search</button>
+            </div>
+        </div>
+    </div>
+    <!-- Hero Section end -->
+
+    <!-- About -->
+    <div class="container mx-auto py-10 px-4 lg:flex items-center gap-6"data-aos="fade-up" data-aos-duration="3000">
+        <!-- Image Section -->
+        <div class="lg:w-1/3 w-auto">
+            <img src="/public/img/about.jpg" alt="Tourist Image" class="rounded-lg  w-full object-cover mt-16 "data-aos="fade-up" data-aos-duration="1000">
+        </div>
+    
+        <!-- Content Section -->
+        <div class="lg:w-1/2 w-full mt-8 lg:mt-0" >
+            <!-- About Us Section -->
+           <div class="flex items-center justify-start gap-4" data-aos="fade-up" data-aos-duration="2000">
+            <h6 class="text-lime-500 font-bold uppercase text-xl mb-3">About Us</h6>
+                <div class="flex flex-col place-items-start">
+                <hr class="w-14 border-t-2 border-lime-500 -mt-2 ">
+                <hr class="w-8 border-t-1 border-lime-500 mt-2">
+            </div>
+            </div>
+            <h1 class="text-4xl font-bold mb-4">Welcome to <span class="text-lime-500" data-aos="fade-up" data-aos-duration="2000">Tourist</span></h1>
+            <p class="text-gray-600 mb-4">
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.
+                Clita erat ipsum et lorem et sit.
+            </p>
+            <p class="text-gray-600 mb-6">
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.
+                Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet.
+            </p>
+    
+            <!-- Services List -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 font-bold">
+                <ul class="text-gray-600 space-y-2">
+                    <li class="flex items-center">
+                        <span class="text-lime-500 mr-2">➔</span> First Class Flights
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-lime-500 mr-2">➔</span> 5 Star Accommodations
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-lime-500 mr-2">➔</span> 150 Premium City Tours
+                    </li>
+                </ul>
+    
+                <ul class="text-gray-600 space-y-2">
+                    <li class="flex items-center">
+                        <span class="text-lime-500 mr-2">➔</span> Handpicked Hotels
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-lime-500 mr-2">➔</span> Latest Model Vehicles
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-lime-500 mr-2">➔</span> 24/7 Service
+                    </li>
+                </ul>
+            </div>
+    
+            <!-- Read More Button -->
+            <div class="mt-6">
+                <a href="#"
+                   class="inline-block bg-lime-500 text-white px-6 py-3 rounded-md shadow-lg hover:bg-lime-600 transition">
+                    Read More
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--about End-->
+
+    <section class="header container mx-auto py-16" data-aos="fade-up" data-aos-duration="1000">
+        <div class="text-center my-16" data-aos="fade-up" data-aos-duration="2500">
+            <div class="flex items-center justify-center">
+                <div class="flex flex-col place-items-end">
+                    <hr class="w-14 border-t-2 border-lime-500 ">
+                    <hr class="w-8 border-t-1 border-lime-500 mt-1">
+                </div>
+                <h6 class="text-lime-500 text-xl font-semibold uppercase mx-3 tracking-wider">Services</h6>
+                <div class="flex flex-col place-items-start">
+                    <hr class="w-14 border-t-2 border-lime-500  ">
+                    <hr class="w-8 border-t-1 border-lime-500 mt-1">
+                </div>
+            </div>
+            <h2 class="text-3xl font-bold mt-4">Our Services</h2>
+        </div>
+        <div class="cards-section grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1000"
+                class="card-4 group bg-white text-lime-950 p-6 rounded-lg shadow-lg transition-all duration-500 ease-in-out will-change-transform hover:bg-lime-600 hover:text-white z-10">
+                <div class="text-left">
+                    <i class="fa fa-3x fa-cog text-lime-500 group-hover:text-white mb-4"></i>
+                    <h3 class="text-xl font-bold text-black group-hover:text-white">WorldWide Tours</h3>
+                    <p class="group-hover:text-white">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet
+                        diam</p>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500"
+                class="card-2 group bg-white text-lime-950 p-6 rounded-lg shadow-lg transition-colors duration-500 ease-in-out hover:bg-lime-600 hover:text-white">
+                <div class="text-left">
+                    <i class="fa fa-3x fa-hotel text-lime-500 group-hover:text-white mb-4"></i>
+                    <h3 class="text-xl font-bold text-black group-hover:text-white">Hotel Reservation</h3>
+                    <p class="group-hover:text-white">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet
+                        diam</p>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="700"
+                class="card-3 group bg-white text-lime-950 p-6 rounded-lg shadow-lg transition-colors duration-500 ease-in-out hover:bg-lime-600 hover:text-white">
+                <div class="text-left">
+                    <i class="fa fa-3x fa-user text-lime-500 group-hover:text-white mb-4"></i>
+                    <h3 class="text-xl font-bold text-black group-hover:text-white">Travel Guides</h3>
+                    <p class="group-hover:text-white">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet
+                        diam</p>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="800"
+                class="card-4 group bg-white text-lime-950 p-6 rounded-lg shadow-lg transition-colors duration-500 ease-in-out hover:bg-lime-600 hover:text-white">
+                <div class="text-left">
+                    <i class="fa fa-3x fa-cog text-lime-500 group-hover:text-white mb-4"></i>
+                    <h3 class="text-xl font-bold text-black group-hover:text-white">WorldWide Tours</h3>
+                    <p class="group-hover:text-white">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet
+                        diam</p>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="900"
+                class="card-5 group bg-white text-lime-950 p-6 rounded-lg shadow-lg transition-colors duration-500 ease-in-out hover:bg-lime-600 hover:text-white">
+                <div class="text-left">
+                    <i class="fa fa-3x fa-globe text-lime-500 group-hover:text-white mb-4"></i>
+                    <h3 class="text-xl font-bold text-black group-hover:text-white">WorldWide Tours</h3>
+                    <p class="group-hover:text-white">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet
+                        diam</p>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1000"
+                class="card-6 group bg-white text-lime-950 p-6 rounded-lg shadow-lg transition-colors duration-500 ease-in-out hover:bg-lime-600 hover:text-white">
+                <div class="text-left">
+                    <i class="fa fa-3x fa-hotel text-lime-500 group-hover:text-white mb-4"></i>
+                    <h3 class="text-xl font-bold text-black group-hover:text-white">Hotel Reservation</h3>
+                    <p class="group-hover:text-white">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet
+                        diam</p>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1200"
+                class="card-7 group bg-white text-lime-950 p-6 rounded-lg shadow-lg transition-colors duration-500 ease-in-out hover:bg-lime-600 hover:text-white">
+                <div class="text-left">
+                    <i class="fa fa-3x fa-user text-lime-500 group-hover:text-white mb-4"></i>
+                    <h3 class="text-xl font-bold text-black group-hover:text-white">Travel Guides</h3>
+                    <p class="group-hover:text-white">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet
+                        diam</p>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1300"
+                class="card-8 group bg-white text-lime-950 p-6 rounded-lg shadow-lg transition-colors duration-500 ease-in-out hover:bg-lime-600 hover:text-white">
+                <div class="text-left">
+                    <i class="fa fa-3x fa-cog text-lime-500 group-hover:text-white mb-4"></i>
+                    <h3 class="text-xl font-bold text-black group-hover:text-white">WorldWide Tours</h3>
+                    <p class="group-hover:text-white">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet
+                        diam</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Destination Start -->
+    <section class="destination py-2 mt-0  ml-52 mr-52 justify-center" data-aos="fade-up" data-aos-duration="1000">
+        <div class="main mx-auto ">
+            <div class="text-center my-16" data-aos="fade-up" data-aos-duration="2500">
+                <div class="flex items-center justify-center">
+                    <div class="flex flex-col place-items-end">
+                        <hr class="w-14 border-t-2 border-lime-500 ">
+                        <hr class="w-8 border-t-1 border-lime-500 mt-1">
+                    </div>
+                    <h6 class="text-lime-500 text-xl font-semibold uppercase mx-3 tracking-wider">Destination</h6>
+                    <div class="flex flex-col place-items-start">
+                        <hr class="w-14 border-t-2 border-lime-500  ">
+                        <hr class="w-8 border-t-1 border-lime-500 mt-1">
+                    </div>
+                </div>
+                <h2 class="text-3xl font-bold mt-4">Popular Destination</h2>
+            </div>
+
+            <!-- Main Content Grid -->
+            <div class="iamge container grid grid-cols-1 lg:grid-cols-2 gap-6 ">
+                <div class="container left-3-img grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div class="img-1-lg relative col-span-2 overflow-hidden group" data-aos="zoom-in"
+                        data-aos-duration="1000">
+                        <img src="/public/img/destination-1.jpg" alt=""
+                            class="w-full h-full object-cover transform group-hover:scale-125 transition duration-700">
+                        <div class="absolute top-0 left-0 bg-white text-red-600 font-bold px-3 py-1 m-3 rounded-xl">
+                            30% off</div>
+                        <div
+                            class="absolute bottom-0 right-0 bg-white text-lime-500 font-bold px-6 py-1 m-3 rounded-xl">
+                            Thailan</div>
+                    </div>
+
+                    <div class="img-2-sm relative overflow-hidden group" data-aos="zoom-in" data-aos-duration="1500">
+                        <img src="/public/img/destination-2.jpg" alt=""
+                            class="w-full h-full object-cover transform group-hover:scale-125 transition duration-700">
+                        <div class="absolute top-0 left-0 bg-white text-red-600 font-bold px-3 py-1 m-3 rounded-xl">
+                            25% off</div>
+                        <div
+                            class="absolute bottom-0 right-0 bg-white text-lime-600 font-bold px-6 py-1 m-3 rounded-xl">
+                            Malaysia</div>
+                    </div>
+
+                    <div class="img-3-sm relative overflow-hidden group " data-aos="zoom-in" data-aos-duration="2000">
+                        <img src="/public/img/destination-3.jpg" alt=""
+                            class="w-full h-full object-cover transform group-hover:scale-125 transition1 duration-700">
+                        <div class="absolute top-0 left-0 bg-white text-red-600 font-bold px-3 py-1 m-3 rounded-xl">
+                            25% off</div>
+                        <div
+                            class="absolute bottom-0 right-0 bg-white text-lime-600 font-bold px-6 py-1 m-3 rounded-xl">
+                            Malaysia</div>
+                    </div>
+                </div>
+
+                <div class="img-3-sm relative overflow-hidden group " data-aos="zoom-in" data-aos-duration="2500">
+                    <img src="/public/img/destination-4.jpg" alt=""
+                        class="w-full h-full object-cover transform group-hover:scale-125 transition1 duration-700">
+                    <div class="absolute top-0 left-0 bg-white text-red-600 font-bold px-3 py-1 m-3 rounded-xl">25%
+                        off</div>
+                    <div class="absolute bottom-0 right-0 bg-white text-lime-600 font-bold px-6 py-1 m-3 rounded-xl">
+                        Malaysia</div>
+                </div>
+            </div>
+    </section>
+
+    <section class="awesome-pkg mx-auto px-4 mt-10 max-w-screen-lg">
+        <!-- Section Header -->
+        <div class="text-center my-16" data-aos="fade-up" data-aos-duration="2500">
+            <div class="flex items-center justify-center">
+                <!-- Left Decoration -->
+                <div class="flex flex-col place-items-end">
+                    <hr class="w-14 border-t-2 border-lime-500">
+                    <hr class="w-8 border-t-1 border-lime-500 mt-1">
+                </div>
+                <h6 class="text-lime-500 text-xl font-semibold uppercase mx-3 tracking-wider">Packages</h6>
+                <!-- Right Decoration -->
+                <div class="flex flex-col place-items-start">
+                    <hr class="w-14 border-t-2 border-lime-500">
+                    <hr class="w-8 border-t-1 border-lime-500 mt-1">
+                </div>
+            </div>
+            <h2 class="text-3xl font-bold mt-4">Awesome Packages</h2>
+        </div>
+    
+        <!-- Packages Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden" data-aos="fade-up" data-aos-duration="1000">
+                <div class="overflow-hidden">
+                    <img src="/public/img/package-1.jpg" alt="Indonesia"
+                        class="w-full h-48 sm:h-56 object-cover hover:scale-110 transition-transform duration-700">
+                </div>
+                <div class="flex justify-between border-b p-2 text-sm sm:text-base">
+                    <span class="flex items-center border-r-2 pr-6"><i class="fas fa-map-marker-alt text-lime-600 mr-2"></i>Indonesia</span>
+                    <span class="flex items-center px-2"><i class="fas fa-calendar-alt text-lime-600 mr-2"></i>3 Days</span>
+                    <span class="flex items-center border-l-2 pl-6"><i class="fas fa-user text-lime-600 mr-2"></i>2 Person</span>
+                </div>
+                <div class="p-4 sm:p-6 text-center">
+                    <h3 class="text-lg sm:text-xl font-bold mb-2">$149.00</h3>
+                    <div class="mb-3 text-lime-600">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-sm sm:text-base text-gray-600">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam eos.</p>
+                    <div class="flex justify-center mt-4 gap-1">
+                        <a href="#" class="bg-lime-600 text-white px-4 py-2 text-sm sm:text-base rounded-l-full hover:bg-lime-500 duration-700">Read More</a>
+                        <a href="#" class="bg-lime-600 text-white px-4 py-2 text-sm sm:text-base rounded-r-full hover:bg-lime-500 duration-700">Book Now</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 2 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden" data-aos="fade-up" data-aos-duration="1500">
+                <div class="overflow-hidden">
+                    <img src="/public/img/package-2.jpg" alt="Thailand"
+                        class="w-full h-48 sm:h-56 object-cover hover:scale-110 transition-transform duration-700">
+                </div>
+                <div class="flex justify-between border-b p-2 text-sm sm:text-base">
+                    <span class="flex items-center border-r-2 pr-6"><i class="fas fa-map-marker-alt text-lime-600 mr-2"></i>Thailand</span>
+                    <span class="flex items-center px-2"><i class="fas fa-calendar-alt text-lime-600 mr-2"></i>5 Days</span>
+                    <span class="flex items-center border-l-2 pl-6"><i class="fas fa-user text-lime-600 mr-2"></i>4 Person</span>
+                </div>
+                <div class="p-4 sm:p-6 text-center">
+                    <h3 class="text-lg sm:text-xl font-bold mb-2">$199.00</h3>
+                    <div class="mb-3 text-lime-600">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="text-sm sm:text-base text-gray-600">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam eos.</p>
+                    <div class="flex justify-center mt-4 gap-1">
+                        <a href="#" class="bg-lime-600 text-white px-4 py-2 text-sm sm:text-base rounded-l-full hover:bg-lime-500 duration-700">Read More</a>
+                        <a href="#" class="bg-lime-600 text-white px-4 py-2 text-sm sm:text-base rounded-r-full hover:bg-lime-500 duration-700">Book Now</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 3 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden" data-aos="fade-up" data-aos-duration="2000">
+                <div class="overflow-hidden">
+                    <img src="/public/img/package-3.jpg" alt="Maldives"
+                        class="w-full h-48 sm:h-56 object-cover hover:scale-110 transition-transform duration-700">
+                </div>
+                <div class="flex justify-between border-b p-2 text-sm sm:text-base">
+                    <span class="flex items-center border-r-2 pr-6"><i class="fas fa-map-marker-alt text-lime-600 mr-2"></i>Maldives</span>
+                    <span class="flex items-center px-2"><i class="fas fa-calendar-alt text-lime-600 mr-2"></i>7 Days</span>
+                    <span class="flex items-center border-l-2 pl-6"><i class="fas fa-user text-lime-600 mr-2"></i>2 Person</span>
+                </div>
+                <div class="p-4 sm:p-6 text-center">
+                    <h3 class="text-lg sm:text-xl font-bold mb-2">$299.00</h3>
+                    <div class="mb-3 text-lime-600">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-sm sm:text-base text-gray-600">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam eos.</p>
+                    <div class="flex justify-center mt-4 gap-1">
+                        <a href="#" class="bg-lime-600 text-white px-4 py-2 text-sm sm:text-base rounded-l-full hover:bg-lime-500 duration-700">Read More</a>
+                        <a href="#" class="bg-lime-600 text-white px-4 py-2 text-sm sm:text-base rounded-r-full hover:bg-lime-500 duration-700">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!--Booking-->
+
+    <div class=" bg-gray-200 py-12 mt-20 ml-20 mr-12" data-aos="fade-up" data-aos-duration="3000">
+        <!-- Background Image -->
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/public/img/booking.jpg');"></div>
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+
+        <!-- Content Wrapper -->
+        <div class="relative z-10 container mx-auto grid lg:grid-cols-2 gap-8 items-center px-6 lg:px-12">
+
+            <!-- Left Section: Online Booking -->
+            <div class="bg-transparent p-8 text-white">
+                <h3 class="text-sm uppercase font-bold text-lime-400 mb-2">Booking</h3>
+                <h2 class="text-4xl font-bold mb-6">Online Booking</h2>
+                <p class="mb-4">
+                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat
+                    ipsum et lorem et sit.
+                </p>
+                <p class="mb-8">
+                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat
+                    ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet.
+                </p>
+                <button
+                    class="border border-white text-white py-2 px-6 rounded-lg hover:bg-lime-500 hover:border-lime-500 hover:text-black transition duration-300">
+                    Read More
+                </button>
+            </div>
+
+            <!-- Right Section: Book A Tour Form -->
+            <div class="bg-transparent  p-8 text-white">
+                <h2 class="text-4xl font-bold mb-6 text-white">Book A Tour</h2>
+                <form class="space-y-4">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                        <input type="text" placeholder="Your Name"
+                            class="w-full py-3 px-4 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-lime-500">
+                        <input type="email" placeholder="Your Email"
+                            class="w-full py-3 px-4 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-lime-500">
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                        <input type="text" placeholder="Date & Time"
+                            class="w-full py-3 px-4 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-lime-500">
+                        <select
+                            class="w-full py-3 px-4 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-lime-500">
+                            <option>Destination 1</option>
+                            <option>Destination 2</option>
+                        </select>
+                    </div>
+                    <textarea placeholder="Special Request"
+                        class="w-full py-3 px-4 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-lime-500"></textarea>
+                    <button
+                        class="w-full py-3 px-4 bg-lime-500 text-white font-semibold rounded-lg hover:bg-lime-600 transition duration-300">
+                        Book Now
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--Process-->
+    <div class="main-proess container mx-auto py-12">
+        <div class="text-center my-16" data-aos="fade-up" data-aos-duration="1000">
+            <div class="flex items-center justify-center">
+                <div class="flex flex-col place-items-end">
+                    <hr class="w-14 border-t-2 border-lime-500 ">
+                    <hr class="w-8 border-t-1 border-lime-500 mt-1">
+                </div>
+                <h6 class="text-lime-500 text-xl font-semibold uppercase mx-3 tracking-wider">Process</h6>
+                <div class="flex flex-col place-items-start">
+                    <hr class="w-14 border-t-2 border-lime-500  ">
+                    <hr class="w-8 border-t-1 border-lime-500 mt-1">
+                </div>
+            </div>
+            <h2 class="text-3xl font-bold mt-4">3 Easy Steps</h2>
+        </div>
+
+        <div class="cards grid grid-cols-1 md:grid-cols-3 gap-8 justify-center">
+            <div class=" card-1 relative border border-lime-500 pt-16 pb-6 px-6 text-center rounded-lg shadow-lg bg-white"
+                data-aos="fade-up" data-aos-duration="1000">
+                <div
+                    class="absolute -top-10 left-1/2 transform -translate-x-1/2 w-24 h-24 bg-lime-500 rounded-full flex items-center justify-center shadow-lg ">
+                    <i class="fa fa-globe fa-3x text-white"></i>
+                </div>
+                <h5 class="mt-6 text-xl font-bold">Choose A Destination</h5>
+                <hr class="w-1/4 border-lime-500 my-2 mx-auto">
+                <hr class="w-1/2 border-lime-500 my-1 mx-auto">
+                <p class="text-gray-500">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat
+                    ipsum et lorem et sit sed stet lorem sit</p>
+            </div>
+            <div class=" card-2 relative border border-lime-500 pt-16 pb-6 px-6 text-center rounded-lg shadow-lg bg-white"
+                data-aos="fade-up" data-aos-duration="1500">
+                <div
+                    class="absolute -top-10 left-1/2 transform -translate-x-1/2 w-24 h-24 bg-lime-500 rounded-full flex items-center justify-center shadow-lg">
+                    <i class="fa fa-dollar-sign fa-3x text-white"></i>
+                </div>
+                <h5 class="mt-6 text-xl font-bold">Choose A Destination</h5>
+                <hr class="w-1/4 border-lime-500 my-2 mx-auto">
+                <hr class="w-1/2 border-lime-500 my-1 mx-auto">
+                <p class="text-gray-500">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat
+                    ipsum et lorem et sit sed stet lorem sit</p>
+            </div>
+            <div class=" card-3 relative border border-lime-500 pt-16 pb-6 px-6 text-center rounded-lg shadow-lg bg-white"
+                data-aos="fade-up" data-aos-duration="3000">
+                <div
+                    class="absolute -top-10 left-1/2 transform -translate-x-1/2 w-24 h-24 bg-lime-500 rounded-full flex items-center justify-center shadow-lg">
+                    <i class="fa fa-plane fa-3x text-white"></i>
+                </div>
+                <h5 class="mt-6 text-xl font-bold">Choose A Destination</h5>
+                <hr class="w-1/4 border-lime-500 my-2 mx-auto">
+                <hr class="w-1/2 border-lime-500 my-1 mx-auto">
+                <p class="text-gray-500">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat
+                    ipsum et lorem et sit sed stet lorem sit</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Travel Guide-->
+
+    <div class="main-proess container mx-auto py-12">
+        <div class="text-center my-16" data-aos="fade-up" data-aos-duration="1000">
+            <div class="flex items-center justify-center">
+                <div class="flex flex-col place-items-end">
+                    <hr class="w-14 border-t-2 border-lime-500 ">
+                    <hr class="w-8 border-t-1 border-lime-500 mt-1">
+                </div>
+                <h6 class="text-lime-500 text-xl font-semibold uppercase mx-3 tracking-wider">Travel Guide</h6>
+                <div class="flex flex-col place-items-start">
+                    <hr class="w-14 border-t-2 border-lime-500  ">
+                    <hr class="w-8 border-t-1 border-lime-500 mt-1">
+                </div>
+            </div>
+            <h2 class="text-3xl font-bold mt-4">Meet Our Guide</h2>
+        </div>
+
+        <!-- Guide Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+
+            <div class=" card-1 team-item bg-white shadow-lg rounded-lg overflow-hidden relative" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                <div class="relative p-2">
+                    <img class="w-full h-auto object-cover hover:ease-in-out hover:scale-110 duration-500 "
+                        src="/public/img/team-1.jpg" alt="Team member">
+                    <!-- Social Media Icons -->
+                    <div class="absolute inset-x-0 bottom-0 translate-y-1/2 z-20 flex justify-center ">
+                        <div class="flex items-center space-x-4">
+                            <a href="#" class="text-lime-600"><i
+                                    class="fab fa-facebook-f bg-white py-3 px-4 rounded-full border-b-2 border-b-lime-500 hover:bg-lime-500 hover:text-white"></i></a>
+                            <a href="#" class="text-lime-600"><i
+                                    class="fab fa-twitter bg-white py-3 px-3 rounded-full border-b-2 border-b-lime-500 hover:bg-lime-500 hover:text-white"></i></a>
+                            <a href="#" class="text-lime-600"><i
+                                    class="fab fa-instagram bg-white py-3 px-3 rounded-full border-b-2 border-b-lime-500 hover:bg-lime-500 hover:text-white"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center p-4 pt-8">
+                    <h5 class="text-lg font-semibold">Full Name</h5>
+                    <p class="text-gray-600 text-sm">Designation</p>
+                </div>
+            </div>
+
+            <div class=" card-2 team-item bg-white shadow-lg rounded-lg overflow-hidden relative" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+                <div class="relative p-2 ">
+                    <img class="w-full h-auto object-cover hover:ease-in-out hover:scale-110 duration-500 "
+                        src="/public/img/team-2.jpg" alt="Team member">
+                    <!-- Social Media Icons -->
+                    <div class="absolute inset-x-0 bottom-0 translate-y-1/2 z-20 flex justify-center ">
+                        <div class="flex items-center space-x-4">
+                            <a href="#" class="text-lime-600"><i
+                                    class="fab fa-facebook-f bg-white py-3 px-4 rounded-full border-b-2 border-b-lime-500 hover:bg-lime-500 hover:text-white"></i></a>
+                            <a href="#" class="text-lime-600"><i
+                                    class="fab fa-twitter bg-white py-3 px-3 rounded-full border-b-2 border-b-lime-500 hover:bg-lime-500 hover:text-white"></i></a>
+                            <a href="#" class="text-lime-600"><i
+                                    class="fab fa-instagram bg-white py-3 px-3 rounded-full border-b-2 border-b-lime-500 hover:bg-lime-500 hover:text-white"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center p-4 pt-8">
+                    <h5 class="text-lg font-semibold">Full Name</h5>
+                    <p class="text-gray-600 text-sm">Designation</p>
+                </div>
+            </div>
+
+            <div class=" card-3 team-item bg-white shadow-lg rounded-lg overflow-hidden relative"data-aos="fade-up" data-aos-duration="2500" data-aos-delay="800">
+                <div class="relative p-2">
+                    <img class="w-full h-auto object-cover hover:ease-in-out hover:scale-110 duration-500 "
+                        src="/public/img/team-3.jpg" alt="Team member">
+                    <!-- Social Media Icons -->
+                    <div class="absolute inset-x-0 bottom-0 translate-y-1/2 z-20 flex justify-center ">
+                        <div class="flex items-center space-x-4">
+                            <a href="#" class="text-lime-600"><i
+                                    class="fab fa-facebook-f bg-white py-3 px-4 rounded-full border-b-2 border-b-lime-500 hover:bg-lime-500 hover:text-white"></i></a>
+                            <a href="#" class="text-lime-600"><i
+                                    class="fab fa-twitter bg-white py-3 px-3 rounded-full border-b-2 border-b-lime-500 hover:bg-lime-500 hover:text-white"></i></a>
+                            <a href="#" class="text-lime-600"><i
+                                    class="fab fa-instagram bg-white py-3 px-3 rounded-full border-b-2 border-b-lime-500 hover:bg-lime-500 hover:text-white"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center p-4 pt-8">
+                    <h5 class="text-lg font-semibold">Full Name</h5>
+                    <p class="text-gray-600 text-sm">Designation</p>
+                </div>
+            </div>
+
+            <div class="card-4 team-item bg-white shadow-lg rounded-lg overflow-hidden relative" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000">
+                <div class="relative p-2">
+                    <img class="w-full h-auto object-cover hover:ease-in-out hover:scale-110 duration-500 "
+                        src="/public/img/team-4.jpg" alt="Team member">
+                    <!-- Social Media Icons -->
+                    <div class="absolute inset-x-0 bottom-0 translate-y-1/2 z-20 flex justify-center ">
+                        <div class="flex items-center space-x-4">
+                            <a href="#" class="text-lime-600"><i
+                                    class="fab fa-facebook-f bg-white py-3 px-4 rounded-full border-b-2 border-b-lime-500 hover:bg-lime-500 hover:text-white"></i></a>
+                            <a href="#" class="text-lime-600"><i
+                                    class="fab fa-twitter bg-white py-3 px-3 rounded-full border-b-2 border-b-lime-500 hover:bg-lime-500 hover:text-white"></i></a>
+                            <a href="#" class="text-lime-600"><i
+                                    class="fab fa-instagram bg-white py-3 px-3 rounded-full border-b-2 border-b-lime-500 hover:bg-lime-500 hover:text-white"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center p-4 pt-8">
+                    <h5 class="text-lg font-semibold">Full Name</h5>
+                    <p class="text-gray-600 text-sm">Designation</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonial -->
+        <div class="text-center my-16" data-aos="fade-up" data-aos-duration="2500">
+            <div class="flex items-center justify-center">
+                <div class="flex flex-col place-items-end">
+                    <hr class="w-14 border-t-2 border-lime-500 ">
+                    <hr class="w-8 border-t-1 border-lime-500 mt-1">
+                </div>
+                <h6 class="text-lime-500 text-xl font-semibold uppercase mx-3 tracking-wider">Testimonial</h6>
+                <div class="flex flex-col place-items-start">
+                    <hr class="w-14 border-t-2 border-lime-500  ">
+                    <hr class="w-8 border-t-1 border-lime-500 mt-1">
+                </div>
+            </div>
+            <h2 class="text-3xl font-bold mt-4">Our Clients Say!!!</h2>
+        </div>
+            <!-- Swiper Slider -->
+            <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="30"
+                slides-per-view="3">
+                <!-- Testimonial Item 1 -->
+                <swiper-slide class="mb-10">
+                    <div class="testimonial-item text-center border rounded-lg p-6 shadow-md hover:bg-lime-500 hover:text-white">
+                        <img class="rounded-full mx-auto mb-4" src="/public/img/testimonial-1.jpg" alt="Testimonial 1"
+                            style="width: 80px; height: 80px;">
+                        <h5 class="text-lg font-bold">John Doe</h5>
+                        <p class="text-sm">New York, USA</p>
+                        <p class="text-sm mt-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet
+                            diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                </swiper-slide>
+
+                <!-- Testimonial Item 2 -->
+                <swiper-slide>
+                    <div class="testimonial-item bg-white text-center border rounded-lg p-6 shadow-md hover:bg-lime-500 hover:text-white">
+                        <img class="rounded-full mx-auto mb-4" src="/public/img/testimonial-2.jpg" alt="Testimonial 2"
+                            style="width: 80px; height: 80px;">
+                        <h5 class="text-lg font-bold">John Doe</h5>
+                        <p class="text-sm">New York, USA</p>
+                        <p class="text-sm mt-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet
+                            diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                </swiper-slide>
+
+                <!-- Testimonial Item 3 -->
+                <swiper-slide>
+                    <div class="testimonial-item bg-white text-center border rounded-lg p-6 shadow-md hover:bg-lime-500 hover:text-white">
+                        <img class="rounded-full mx-auto mb-4" src="/public/img/testimonial-3.jpg" alt="Testimonial 3"
+                            style="width: 80px; height: 80px;">
+                        <h5 class="text-lg font-bold">John Doe</h5>
+                        <p class="text-sm">New York, USA</p>
+                        <p class="text-sm mt-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet
+                            diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                </swiper-slide>
+
+                <!-- Testimonial Item 4 -->
+                <swiper-slide>
+                    <div class="testimonial-item bg-white text-center border rounded-lg p-6 shadow-md hover:bg-lime-500 hover:text-white">
+                        <img class="rounded-full mx-auto mb-4" src="/public/img/testimonial-4.jpg" alt="Testimonial 4"
+                            style="width: 80px; height: 80px;">
+                        <h5 class="text-lg font-bold">John Doe</h5>
+                        <p class="text-sm">New York, USA</p>
+                        <p class="text-sm mt-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet
+                            diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                </swiper-slide>
+          
+
+            <swiper-slide>
+                <div class="testimonial-item bg-white text-center border rounded-lg p-6 shadow-md hover:bg-lime-500 hover:text-white">
+                    <img class="rounded-full mx-auto mb-4" src="/public/img/testimonial-2.jpg" alt="Testimonial 4"
+                        style="width: 80px; height: 80px;">
+                    <h5 class="text-lg font-bold">John Doe</h5>
+                    <p class="text-sm">New York, USA</p>
+                    <p class="text-sm mt-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam
+                        et eos. Clita erat ipsum et lorem et sit.</p>
+                </div>
+            </swiper-slide>
+            
+            <swiper-slide>
+                <div class="testimonial-item bg-white text-center border rounded-lg p-6 shadow-md hover:bg-lime-500 hover:text-white">
+                    <img class="rounded-full mx-auto mb-4" src="/public/img/testimonial-1.jpg" alt="Testimonial 5"
+                        style="width: 80px; height: 80px;">
+                    <h5 class="text-lg font-bold">John Doe</h5>
+                    <p class="text-sm">New York, USA</p>
+                    <p class="text-sm mt-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam
+                        et eos. Clita erat ipsum et lorem et sit.</p>
+                </div>
+            </swiper-slide>         
+         </swiper-container>
+        </div>
+
+    <!-- Footer Start -->
+        <div class="footer bg-gray-900 text-gray-400 pt-10 mt-10">
+            <div class="main-footer container mx-auto py-10">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                   <!--Company-->
+                    <div class="company">
+                        <h4 class="text-white text-lg mb-4 font-bold">Company</h4>
+                        <ul class="space-y-2">
+                            <li>
+                                <a href="https://www.free-css.com/free-css-templates " class=" text-sm group text-white inline-flex items-center transform transition-transform duration-200 hover:scale-125">
+                                <span> <i class="fa-solid fa-angle-right"></i> </span> About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.free-css.com/free-css-templates" class=" text-sm group text-white inline-flex items-center transform transition-transform duration-200 hover:scale-125">  <span>  <i class="fa-solid fa-angle-right"></i></span>  Contact US</a>
+                            </li>
+                            <li>
+                                <a href="https://www.free-css.com/free-css-templates" class="text-sm  group text-white inline-flex items-center transform transition-transform duration-200 hover:scale-125">  <span> <i class="fa-solid fa-angle-right"></i>  </span> Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="https://www.free-css.com/free-css-templates" class="text-sm  group text-white inline-flex items-center transform transition-transform duration-200 hover:scale-125">  <span>  <i class="fa-solid fa-angle-right"></i>  </span> Terms & Condition</a>
+                            </li>
+                            <li>
+                                <a href="https://www.free-css.com/free-css-templates" class="text-sm  group text-white inline-flex items-center transform transition-transform duration-200 hover:scale-125">  <span>  <i class="fa-solid fa-angle-right"></i>  </span>FAQs & Help</a>
+                            </li>
+                        </ul>
+                   </div>
+                <!--Contact-->
+
+                <div class="contact">
+                    <h4 class="text-white text-lg mb-4 font-bold">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                    <div class="mt-4">
+                    <a href="#" class="text-white  hover:text-lime-500 hover:bg-white rounded-full text-center py-1 px-2 border-white border-2"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="text-white hover:text-lime-500 hover:bg-white rounded-2xl text-center py-1 px-2 border-white border-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white hover:text-lime-500 hover:bg-white rounded-2xl text-center py-1 px-1.5 border-white border-2"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="text-white hover:text-lime-500 hover:bg-white rounded-2xl text-center py-1 px-1.5 border-white border-2"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            
+                 <!-- Gallery Section -->
+
+                 <div class="gallery">
+                    <h4 class="text-white text-lg mb-4 font-bold">Gallery</h4>
+                    <div class="grid grid-cols-3 gap-2">
+                        <img class="w-auto h-20 object-cover p-1 bg-white" src="/public/img/package-1.jpg" alt="Gallery 1">
+                        <img class="w-auto h-20 object-cover p-1 bg-white" src="/public/img/package-2.jpg" alt="Gallery 1">
+                        <img class="w-auto h-20 object-cover p-1 bg-white" src="/public/img/package-3.jpg" alt="Gallery 1">
+                        <img class="w-auto h-20 object-cover p-1 bg-white" src="/public/img/package-1.jpg" alt="Gallery 1">
+                        <img class="w-auto h-20 object-cover p-1 bg-white" src="/public/img/package-2.jpg" alt="Gallery 1">
+                        <img class="w-auto h-20 object-cover p-1 bg-white" src="/public/img/package-3.jpg" alt="Gallery 1">
+                    </div>
+                 </div>
+
+                 <!-- Newsletter Section -->
+
+                 <div class="newsletter">
+                    <h4 class="text-white text-lg font-bold mb-4">Newsletter</h4>
+                    <p class="mb-4">Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="relative">
+                        <input type="email" placeholder="Your email" class="w-full p-3 pl-4 pr-32 text-black focus:ring-2 focus:ring-lime-500">
+                        <button class="absolute right-2 top-1 px-4 py-2 bg-lime-500 text-white hover:via-lime-300 ">Signup</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="end container mx-auto border-t border-gray-700 pt-6">
+            <div class="flex flex-col sm:flex-row justify-between items-center text-sm text-gray-500">
+                <p>&copy; <a href="#">Your Site Name</a>, All Right Reserved</p>
+                <p>Designed By <a href="https://htmlcodex.com"></a>HTML Codex</p>
+            </div>
+            <div class="felx justify-self-end relative space-x-4 mt-4 sm:mt-0">
+                <a href="#">Home</a>
+                <a href="#">Cookies</a>
+                <a href="#">Help</a>
+                <a href="#"><FAQs/a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+<script>
+    AOS.init();
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+
+
+
+</html>
